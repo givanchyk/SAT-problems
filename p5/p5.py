@@ -41,6 +41,6 @@ for i in range(n):
         clauses.append([h(i, j), int(not adj_matrix[i][j]), f(j), f(j)])
 m = len(clauses)
 with open('output.txt', 'w') as f:
-    f.write('p cnf %d %d\n' % (n, m))
+    f.write('p cnf %d %d\n' % (num_propositions, m))
     for i in range(m):
         f.write(' '.join(map(str, clauses[i])) + ' 0\n')

@@ -7,7 +7,7 @@ for i in range(1, m+1):
     adj_matrix[x][y] = 1
     adj_matrix[y][x] = 1
 print(adj_matrix)
-num_propositions = n + n*n + n*(n-1) / 2
+num_propositions = n + n*n + n*(n+1) / 2
 def f(x):
     return x + 1
 def g(x, y):
